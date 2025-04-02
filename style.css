@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    list-style: none;
+
+}
+body{
+    background: #f5f7fc;
+    flex-wrap: wrap;
+    font-family: "Roboto", serif;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: white;
+}
+
+
+ul{
+    display: flex;
+    justify-content: end ;
+}
+a{
+    color: black;
+}
+li{
+    margin: 10px;
+}
+main{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 20px;
+}
+h1{
+    text-align: center;
+    margin: 20px 0;
+}
+
+.news-card{
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+    margin: 10px;
+    opacity: 0;
+    transition: 0.45s;
+}
+.news-card p{
+    margin: 5px;
+}
+.news-image{
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+p{
+    font-size: 19px;
+}
+.news-card a{
+    color: blue;
+    margin-top: 10px;
+    margin-right: 10px;
+    float: inline-end;
+    font-size: 20px;
+}
+.arrow{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    height: 70px;
+    background: #2c2c54;
+}
+.apps{
+    height: 40px;
+}
+.footer div{
+    display: flex;
+    align-items: center;
+    margin: 20px;
+}
+.footer a{
+    color: white;
+    margin: 5px;
+}
+@media all and (max-width:600px){
+    main{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(auto-fit, 1fr);
+        justify-items: center;
+    }
+}
+@media all and (min-width:1000px){
+    main{
+        justify-content: center;
+        grid-template-columns: repeat(2, minmax(400px, 600px));
+        grid-template-rows: repeat(auto-fit, 1fr);
+        justify-items: center;
+    }
+}

@@ -1,0 +1,186 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="deposit.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script type="module" src="data.js"></script>
+    <script type="module" src="script.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <a href="index.html"><img src="photos/Logo.svg" alt="#" style="height: 54px;" class="logo"></a>
+            <ul class="nav-links">
+                <li style="color: rgba(1, 1, 1, 0.7);"><a href="index.html" class="navLinkNews">News</a></li>
+                <li><a href="#" class="navLinkDeposit">Deposit</a></li>
+                <li>
+                    <a href="#"><img src="photos/free-icon-ukraine-330540 1.svg" alt="UA" id="toggleUkraine"></a>
+                    <img src="photos/Untitled.svg" alt="" style="margin-left: 3px;">
+                    <a href="#"><img src="photos/free-icon-flag-12360887 1.svg" alt="EN" id="toggleEngland"></a>
+                </li>
+            </ul>
+        </header>
+
+        <h1 class="headDepositText">Why is deposit benefical?</h1>
+        <main>
+            <p style="font-size: 22px;" class="textAboutDeposit">
+                A deposit is one of the simplest and most reliable ways to save and grow your money. Here are some key
+                <br>
+                reasons why deposits are worth considering:
+            </p>
+            <div id="benefits">
+                <div class="benefits-list">
+_
+                    <div class="benefit-item">
+                        <p class="reasonDepositOne"><span style="color: #1A16F3;">♦</span> <strong>Guaranteed
+                                Income</strong> - Unlike investments in the stock market or cryptocurrency, a deposit
+                            provides a fixed return that you will definitely receive at the end of the term.</p>
+                    </div>
+                    <div class="benefit-item">
+                        <p class="reasonDepositTwo"><span style="color: #1A16F3;">♦</span> <strong>Fund
+                                Security</strong> - Deposits in banks participating in the Deposit
+                            Guarantee Fund are protected in case of bank insolvency (up to a set limit).</p>
+
+                    </div>
+                    <div class="benefit-item">
+                        <p class="reasonDepositThree"><span style="color: #1A16F3;">♦</span> <strong>Passive
+                                Income</strong> - No need for active management, risk-taking, or market monitoring-just
+                            place your money
+                            in a deposit and earn profit.</p>
+                    </div>
+
+                </div>
+
+                <img src="photos/cnjyrc 3 1.svg" alt="" id="stonks-image">
+            </div>
+
+
+            <p class="conclusion">
+                A deposit is a smart choice for those who value stability, reliability, and want their money to work for
+                them.
+            </p>
+            <section>
+                <div class="invest-card">
+
+
+
+                    <div class="banks">
+                        <h2 class="choosingBanksHead">Choosing bank</h2>
+                        <ul>
+                            <li id="privat24"><img src="photos/image 1.svg" alt="" class="bank-item"
+                                    style="width: 37px;"></li>
+                            <li id="monobank"><img src="photos/image 2.svg" alt="" class="bank-item"
+                                    style="width: 36px;"></li>
+                            <li id="oschadbank"><img src="photos/ощад 1.svg" alt="" class="bank-item"
+                                    style="width: 36px;"></li>
+                            <li id="raiffeisen"><img src="photos/image 4.svg" alt="" class="bank-item"></li>
+                            <li id="pumb"><img src="photos/image 5.svg" alt="" class="bank-item" style="width: 36px;">
+                            </li>
+
+                        </ul>
+                        <ul>
+                            <li id="otpbank"><img src="photos/image 6.svg" alt="" class="bank-item"
+                                    style="width: 36px;"></li>
+                            <li id="ukrsib"><img src="photos/image 7.svg" alt="" class="bank-item" style="width: 36px;">
+                            </li>
+                            <li id="ukrgasbank"><img src="photos/image 8.svg" alt="" class="bank-item"></li>
+                            <li id="tascombank"><img src="photos/image 9.svg" alt="" class="bank-item"></li>
+                            <li id="sense"><img src="photos/image 3.svg" alt="" class="bank-item"></li>
+                        </ul>
+                        <div class="invested">
+                            <div class="amountBlock">
+                                <p class="placeholderText depositAmountText">Deposit amount</p>
+                                <div class="amountInput">
+                                    <input type="text" id="amount" value="0">
+                                    <p class="placeholderIcon" id="currencyIcon">₴</p>
+                                </div>
+                            </div>
+                            <div class="selectCurrency">
+                                <p class="placeholderText currencyText">Currency</p>
+                                <select name="currency" id="currenciesList">
+                                    <option value="$">USD</option>
+                                    <option value="€">EUR</option>
+                                    <option value="₴">UAH</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="selectTerm">
+                            <div class="monthsP">
+                                <p class="placeholderText termText">Term</p>
+                                <p class="monthIndicator" id="monthCount">3 month</p>
+                            </div>
+                            <input type="range" min="1" max="24" class="monthSlider" value="3" id="depositMonth">
+                        </div>
+                        <div class="months">
+                            <p class="period periodTextOne">1 month</p>
+                            <p class="period periodTextTwo">24 month</p>
+                        </div>
+                        <div class="checkboxes">
+                            <div class="taxesCheckbox">
+                                <input type="checkbox" name="" id="taxesCheckbox" value="">
+                                <p class="taxesCheckboxText">Calculate with taxes</p>
+                            </div>
+                            <div class="interestCheckbox">
+                                <input type="checkbox" name="" id="interestCheckbox" value="">
+                                <p class="interestCheckboxText">Add interest to deposit</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="outputData">
+                        <div class="conditions">
+                            <canvas id="graph"></canvas>
+                        </div>
+                        <div class="investedBlock">
+                            <p class="placeholderBlue investedText">Invested</p>
+                            <p class="enteredData" id="investedBlock">1000₴</p>
+                            <p class="placeholderBlue interestRateText">Interest rate</p>
+                            <p class="enteredData" id="interestRateBlock">16% per annum</p>
+                            <p class="placeholderBlue afterTaxInterestRateText">After-tax interest rate</p>
+                            <p class="enteredData" id="afterTaxInterestRateBlock">12.32%</p>
+                            <p class="placeholderBlue taxWithheldText">Tax withheld</p>
+                            <p class="enteredData" id="taxWithheldBlock">73.6₴</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+
+        <footer class="footer">
+            <div>
+                <img src="photos/github 1.svg" alt="#" class="apps" style="margin-right: 10px;" id="github">
+                <p> <a href="#">@github123</a> <a href="#">@habgit321 </a><a href="#">@123github</a></p>
+            </div>
+            <div>
+                <img src="photos/discord 1.svg" alt="#" class="apps" style="margin-right: 10px;" id="discord">
+                <p> <a href="#">@github123</a> <a href="#">@habgit321</a> <a href="#">@123github</a></p>
+            </div>
+
+        </footer>
+    </div>
+
+    <!-- Messages -->
+
+    <div id="error1" class="window">
+        <p>The maximum value is 10M</p>
+    </div>
+    <div id="error2" class="window">
+        <p>The minimum value is 100</p>
+    </div>
+    <div id="error3" class="window">
+        <p>Error</p>
+    </div>
+    <div id="error4" class="window">
+        <p>Incorrect month</p>
+    </div>
+    <div id="error5" class="window">
+        <p>Incorrect currency</p>
+    </div>
+</body>
+
+</html>
