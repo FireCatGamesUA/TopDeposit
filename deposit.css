@@ -379,6 +379,9 @@ select:focus {
   canvas{
     max-height: fit-content;
   }
+  #stonks-image{
+    width: 549px;
+  }
 }
 @media all and (max-width:800px){
   #taxesCheckbox, #interestCheckbox{
