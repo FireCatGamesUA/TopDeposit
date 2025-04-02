@@ -384,4 +384,8 @@ select:focus {
   #taxesCheckbox, #interestCheckbox{
     min-width: 10px;
   }
+  #stonks-image{
+    width: 90%
+    height: 90%
+  }
 }
