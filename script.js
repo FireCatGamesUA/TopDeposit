@@ -4021,7 +4021,7 @@ function updateInvestedBlock() {
     }
   }
   else {
-    depositMonthBlock.textContent = `${parseFloat(depositMonth.value)} mounth`;
+    depositMonthBlock.textContent = `${parseFloat(depositMonth.value)} month`;
   }
   ChooseBank();
 }
