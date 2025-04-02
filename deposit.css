@@ -380,7 +380,7 @@ select:focus {
     max-height: fit-content;
   }
   #stonks-image{
-    width: 549px;
+    width: 449px;
   }
 }
 @media all and (max-width:800px){
